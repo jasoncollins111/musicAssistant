@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js ./node_modules/.bin/webpack",
+    "start": "node src/index.tsx ./node_modules/.bin/webpack",
     "build": "webpack --mode=production --node-env=production",
     "build:dev": "webpack --mode=development",
     "build:prod": "webpack --mode=production --node-env=production",
@@ -17,9 +17,12 @@
   "dependencies": {
     "express": "^4.18.2",
     "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "webpack": "^5.88.2"
   },
   "devDependencies": {
+    "@types/react": "^18.2.24",
+    "@types/react-dom": "^18.2.8",
     "css-loader": "^6.8.1",
     "html-webpack-plugin": "^5.5.3",
     "mini-css-extract-plugin": "^2.7.6",
